@@ -47,3 +47,68 @@ let x = 2;
 
 console.log(x > 1);
 console.log(x > 10);
+
+//------------------
+
+let y="string de teste";
+
+console.log(y==="string de teste");
+console.log(y==="novo texto que eu inventei");
+
+//------------------
+
+let y1="string de teste2";
+
+console.log(y!=="novo texto que eu inventei2");
+
+//------------------
+
+let x1 = 2;
+let y2 = 'string de teste';
+
+console.log(`01:${x1 > 1}`);
+console.log(`02:${x1 > 10}`);
+
+console.log(`03:${y2 === 'string de teste3'}`);
+console.log(`04:${y2 !== 'novo texto que inventei3'}`);
+
+console.log(`05:${x >= 2}`);
+console.log(`06:${x >= 1}`);
+console.log(`07:${x >= 3}`);
+console.log(`08:${x <= 3}`);
+console.log(`09:${x > 10}`);
+
+//------------------
+
+let valor3 = 2;
+
+console.log(valor3);
+console.log(typeof valor3);
+
+//------------------
+
+let valor4
+
+console.log(valor3);
+console.log(typeof valor3);
+
+//------------------
+
+let valor5 = undefined;
+
+console.log(valor5);
+
+//------------------
+
+let valor6 = undefined;
+
+console.log(valor6);
+console.log(typeof valor6);
+
+//------------------
+
+let valor7 = null;
+
+console.log(valor7);
+
+//------------------
