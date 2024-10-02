@@ -40,3 +40,10 @@ console.log(valor1Elavor2);
 console.log(valor1OUValor2);
 console.log(inversoValor1);
 console.log(inversoValor2);
+
+//------------------
+
+let x = 2;
+
+console.log(x > 1);
+console.log(x > 10);
