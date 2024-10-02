@@ -1,87 +1,133 @@
-let nome = "Alef";
-console.log(nome);
+// Baixa Complexidade
+let meuNome = "Seu Nome"; // Declara uma variável com o nome
+console.log(meuNome); // Exibe o nome no console
 
-//-------------------
+//----------------
 
-let string1 = "Olá";
-let string2 = "Olá";
-let saoIguais = string1 === string2; // Use '===' para comparação estrita
-console.log(saoIguais);
+let string1 = "exemplo"; // Declara a primeira string
+let string2 = "exemplo"; // Declara a segunda string
+console.log(string1 == string2); // Compara as strings; resultado: true
 
-//-------------------
+//----------------
 
-let numero = 15;
-if (numero > 10) {
-    console.log("O número é maior que 10.");
+let numero = 15; // Declara um número
+console.log(numero > 10); // Verifica se o número é maior que 10; resultado: true
+
+//----------------
+
+let idadeAluno = 20; // Declara a idade do aluno
+if (idadeAluno >= 18) {
+    console.log("Parabéns!"); // Exibe mensagem se maior de idade
+}
+
+//----------------
+
+let idadeVotante = 17; // Declara a idade do votante
+if (idadeVotante >= 16) {
+    console.log("Pode votar!"); // Permissão para votar se a idade for 16 ou mais
 } else {
-    console.log("O número não é maior que 10.");
+    console.log("Não pode votar."); // Mensagem caso contrário
 }
 
-//-------------------
+//----------------
 
-let idade = 20;
-if (idade >= 18) {
-    console.log("Parabéns!");
+let numeroIntervalo = 75; // Declara um número no intervalo
+if (numeroIntervalo >= 50 && numeroIntervalo <= 100) {
+    console.log("O número está entre 50 e 100."); // Verifica se o número está entre 50 e 100
 }
 
-//-------------------
-
-let idade1 = 17; 
-if (idade1 >= 16) {
-    console.log("A pessoa pode votar.");
+// Média Complexidade
+let nomeUsuario = "Alice"; // Declara o nome do usuário
+let idadeUsuario = 19; // Declara a idade do usuário
+if (idadeUsuario >= 18) {
+    console.log(nomeUsuario + ", você é maior de idade."); // Mensagem para maiores de idade
 } else {
-    console.log("A pessoa não pode votar.");
+    console.log(nomeUsuario + ", você é menor de idade."); // Mensagem para menores de idade
 }
 
-//-------------------
+//----------------
 
-let numero1 = 75;
-if (numero1 >= 50 && numero1 <= 100) { // Corrigido 'nuemro1' para 'numero1'
-    console.log("O número está entre 50 e 100.");
+let num1 = 10; // Declara o primeiro número
+let num2 = 15; // Declara o segundo número
+let maior = num1 > num2 ? num1 : num2; // Usa operador ternário para encontrar o maior número
+console.log("O maior número é: " + maior); // Exibe o maior número
+
+//----------------
+
+let texto = "Exemplo"; // Declara uma string
+console.log(texto.length > 5); // Verifica se o comprimento da string é maior que 5; resultado: true
+
+//----------------
+
+let numeroPar1 = 4; // Declara o primeiro número par
+let numeroPar2 = 6; // Declara o segundo número par
+if (numeroPar1 % 2 === 0 && numeroPar2 % 2 === 0) {
+    console.log("Ambos os números são pares."); // Verifica se ambos os números são pares
+}
+
+//----------------
+
+let frase = "Estou aprendendo JavaScript!"; // Declara uma frase
+console.log(frase.includes("JavaScript")); // Verifica se a frase contém "JavaScript"; resultado: true
+
+//----------------
+
+let salario = 2500; // Declara um salário
+console.log(salario > 2000); // Verifica se o salário é maior que 2000; resultado: true
+
+// Alta Complexidade
+let senha = "senha123"; // Declara uma senha
+let temNumero = /\d/.test(senha); // Verifica se a senha contém um número
+console.log(senha.length >= 8 && temNumero); // Verifica se a senha tem pelo menos 8 caracteres e contém número; resultado: true
+
+//----------------
+
+let nota1 = 8; // Declara a primeira nota
+let nota2 = 7; // Declara a segunda nota
+let nota3 = 9; // Declara a terceira nota
+let media = (nota1 + nota2 + nota3) / 3; // Calcula a média das notas
+console.log(media > 7 ? "Aprovado" : "Reprovado"); // Exibe "Aprovado" ou "Reprovado" com base na média
+
+//----------------
+
+let anoAtual = new Date().getFullYear(); // Obtém o ano atual
+let anoBissexto = (anoAtual % 4 === 0 && anoAtual % 100 !== 0) || (anoAtual % 400 === 0); // Verifica se o ano é bissexto
+console.log(anoBissexto ? "O ano é bissexto." : "O ano não é bissexto."); // Exibe resultado da verificação
+
+//----------------
+
+let numero1 = 3; // Declara o primeiro número
+let numero2 = 4; // Declara o segundo número
+let numero3 = 7; // Declara o terceiro número
+console.log(numero3 === numero1 + numero2); // Verifica se o terceiro número é igual à soma dos dois primeiros; resultado: true
+
+//----------------
+
+let usuario = "usuarioTeste"; // Declara um nome de usuário
+let senhaCorreta = "senha123"; // Declara a senha correta
+let tentativas = 0; // Inicializa contagem de tentativas
+
+while (tentativas < 3) { // Permite até 3 tentativas
+    let senhaUsuario = "senhaErrada"; // Simula uma senha do usuário
+    if (senhaUsuario === senhaCorreta) {
+        console.log("Login bem-sucedido!"); // Exibe mensagem de sucesso
+        break; // Sai do loop se o login for bem-sucedido
+    } else {
+        tentativas++; // Incrementa contagem de tentativas
+        if (tentativas === 3) {
+            console.log("Usuário bloqueado."); // Mensagem de bloqueio após 3 tentativas
+        }
+    }
+}
+
+//----------------
+
+let notaExtra = true; // Indica se o aluno fez trabalho extra
+let presenca = 85; // Percentual de presença
+let notaFinal = 8; // Nota final do aluno
+
+if (notaExtra && presenca > 80 && notaFinal > 7) {
+    console.log("Aprovado com condições especiais!"); // Mensagem de aprovação com condições especiais
 } else {
-    console.log("O número não está entre 50 e 100.");
+    console.log("A situação do aluno deve ser reavaliada."); // Mensagem de reavaliação
 }
-
-//----NIVEL MEDIO----
-
-const nome1 = "Alef";
-const idade2 = 17;
-
-if (idade >= 18) {
-    console.log(`${nome}, você é maior de idade.`);
-} else {
-    console.log(`${nome}, você é menor de idade.`);
-}
-
-//-------------------
-
-const num1 = 5;
-const num2 = 10;
-
-const maior = num1 > num2 ? num1 : num2;
-console.log(`O maior número é:${maior}`);
-
-//-------------------
-
-const texto = 'Olá Mundo';
-
-console.log(texto.length > 5 ? 'O texto contém mais de 5 caracteres.' : 'O texto não contém mais de 5 caracteres.');
-
-//-------------------
-
-const numero2 = 4;
-const numero3 = 6;
-console.log(nuemro2 % 2 === 0 && nuemro % 2 === 0 ? 'Ambos os números são pares.' : 'Um ou ambos os números não são pares.')
-
-//-------------------
-
-const str = 'Aprendendo JavaScript';
-console.log(str.includes('JavaScript')? "Afrase contém a palavra 'JavaScript'." : "A frase não contém a palavra 'JavaScript'.");
-
-//-------------------
-
-const salario = 2500;
-console.log(salario > 200 ? "O salário está acima de R$2.000.":"O salário não está acima de R$2.000."); 
-
-//----NIVEL DIFICIL----
-
