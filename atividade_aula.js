@@ -112,3 +112,28 @@ let valor7 = null;
 console.log(valor7);
 
 //------------------
+
+const documentoIdentidade = {
+    nome: 'Alef Kauê',
+    sobrenome: 'Santos Nunes',
+    cpf: '000.000.000-00',
+    empresa: 'SENAI103',
+    idade: 17,
+    };
+   console.log(documentoIdentidade);
+
+//------------------
+
+const investimentoMensal = [1000, 2000, 3000, 2000, 1500, 1200, 1300];
+
+console.log(`O valor investido do mês de Janeiro é: ${investimentoMensal[0]}`);
+console.log(
+    `O valor investido no mês de fevereito é: ${investimentoMensal[1]}`
+)
+console.log(`O valor investido do mês de Março é: ${investimentoMensal}[3]`);
+console.log(`O valor investido do mês de Abril é: ${investimentoMensal}[3]`);
+console.log(`O valor investido do mês de Maio é: ${investimentoMensal}[4]`);
+console.log(`O valor investido do mês de Junho é: ${investimentoMensal[5]}`);
+
+//------------------
+
