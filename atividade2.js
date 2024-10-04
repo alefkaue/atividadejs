@@ -1,7 +1,7 @@
 // Baixa Complexidade
 
 // 1. Declara uma variável com o nome
-let meuNome = "Seu Nome"; 
+let meuNome = "Alef"; 
 console.log(meuNome); // Exibe o nome no console
 
 //----------------
