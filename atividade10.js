@@ -1,4 +1,4 @@
-2// **Exercício 1: Cadastro de Estudantes**
+// **Exercício 1: Cadastro de Estudantes**
 const prompt = require('prompt-sync')();
 
 let listaEstudantes = [];
